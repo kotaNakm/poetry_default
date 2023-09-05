@@ -17,7 +17,8 @@ pyenv local 3.*.*
 pyenv install 3.*.*
 
 #add default libraries
-poetry add numpy pandas scikit-learn jupyter ipykernel matplotlib@3.5.3 seaborn argparse importlib black tqdm dill (scipy)
+poetry add numpy pandas scikit-learn jupyter ipykernel matplotlib@3.5.3 seaborn argparse importlib black tqdm dill 
+(scipy)
 
 # install libraries
 poetry install
@@ -29,3 +30,12 @@ poetry shell
 ipython kernel install --user --name="<shell_name>" 
 ```
 
+
+
+## Tips
+If you face a problem, where "pyenv local 3.x.x" can not work and 
+see "(set by PYENV_VERSION environment variable)" with "pyenv versions"
+
+```
+pyenv shell --unset
+```
