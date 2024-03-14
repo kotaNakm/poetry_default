@@ -10,11 +10,13 @@ cd dir_name
 poetry init 
 
 # if your python environment differs form it written in pyproject.toml
-pyenv local 3.*.*
+pyenv local 3.*.* 
 (pyenv global 3.*.*)
 
+poetry env use 3.*.*
+
 # if necessary  
-pyenv install 3.*.*
+pyenv install 3.*.* --no-root
 
 #add libraries
 poetry add numpy pandas scikit-learn jupyter ipykernel matplotlib@3.5.3 seaborn argparse importlib black tqdm dill 
