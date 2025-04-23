@@ -37,5 +37,6 @@ If you face a problem, where "pyenv local 3.x.x" can not work and
 see "(set by PYENV_VERSION environment variable)" with "pyenv versions"
 ```
 pyenv shell --unset
+
 ```
 
