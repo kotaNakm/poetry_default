@@ -24,6 +24,7 @@ poetry add numpy pandas scikit-learn jupyter ipykernel matplotlib@3.5.3 seaborn 
 poetry run python -m ipykernel install --user --name=$project_name
 
 # make directories
+mkdir _bin
 mkdir _dat
 mkdir _src
 mkdir _notebooks
